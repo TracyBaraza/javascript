@@ -1,0 +1,8 @@
+				DIFFERENCE BETWEEN UNDEFINED AND NULL
+
+UNDEFINED							NULL
+
+•Variable that has been declared but not defined		•An empty or non-existence value null not be assigned
+•Undefined is type a type of undefined				•Null is an object
+•Null==undefined						•Null !==Undefined
+
