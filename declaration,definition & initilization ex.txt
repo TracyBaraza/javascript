@@ -1,0 +1,10 @@
+DIFFERENCE BETWEEN DECLARATION, DEFINITION AND INITIALIZATION
+DECLARATION
+Informs the compiler the name of the variable, the value it holds and the initial value it takes if any
+
+DEFINITION
+A definition determines where the variable gets stored.
+
+INITIALIZATION
+Means of assigning an initial value to a variable.
+
