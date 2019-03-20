@@ -1,0 +1,12 @@
+var array_fruits = ["apple","mango","banana","guava","grapes"]
+
+undefined
+
+console.log(array_fruits)
+
+(5) ["apple", "mango", "banana", "guava", "grapes"]
+undefined
+
+array_fruits[3]
+
+"guava"
