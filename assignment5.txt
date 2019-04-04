@@ -1,0 +1,84 @@
+ var grades  = {
+
+                '80 and above':'A',
+                       '70-79':'B',
+                       '60-69':'C', 
+                       
+                       '50-59':'D', 
+                        
+                        '0-40':'D', 
+               
+               'Anything else':'F'
+
+  }
+      
+
+
+
+function getGrade(my_marks){
+
+switch(marks){
+
+
+case(80,100):
+     
+     console.log("A");
+     
+     break;
+
+
+case(70,79):
+    
+     console.log("B");
+    
+     break;
+
+
+case(60,69):
+    
+     console.log("C");
+    
+     break;
+
+
+case(50,59):
+    
+     console.log("D");
+    
+     break;
+
+
+case(40,49):
+    
+    console.log ("E");
+    
+    break;
+    
+
+default:
+    
+       console.log("F");
+
+}
+
+
+}
+    
+     
+
+
+//undefined
+
+
+getGrade(80)
+// "A"
+
+
+getGrade(72)
+// "B"
+
+getGrade(61)
+// "C"
+
+getGrade(50)
+// "D"
