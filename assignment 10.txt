@@ -1,0 +1,91 @@
+var body = document.body
+body.style.backgroundColor = "silver"
+
+
+document.getElementById("title").style.color = "green";
+
+
+document.getElementById("head").style.textTransform = "uppercase";
+document.getElementById("head2").style.textTransform = "uppercase";
+
+var fruit = document.createElement("li");
+fruit.innerHTML = "Avocados"
+var added = document.getElementById("fruList")
+added.appendChild(fruit)
+
+var vegetables = document.createElement("li");
+vegetables.innerHTML = "carrots"
+var addedveg = document.getElementById("vegList")
+addedveg.appendChild(vegetables)
+
+
+
+
+
+    ASYNC/AWAIT
+Async:
+
+-Async function is a modification to the syntax used in writing promises.
+-It can be placed before a function.
+
+The async keyword before a function has two effects:
+
+1.Makes it always return a promise.
+2.Allows to use await in it.
+
+ eg: async function f(){
+	return 1;
+     }
+f().then (alert);
+
+The promise format: eg  
+function myBook(){
+  return Promise.resolve('Trevor Noah');
+}
+
+
+-Async before a function means a function always returns a promise
+-When a promise is rejected, an async function is represented:eg
+ function myTest(){
+   return Promise.reject(25);
+   }
+async function (){
+   throw 25;
+}
+
+
+Await:
+-Makes JavaScript wait until that promise settles and returns its result.
+-Works only inside async function
+
+-The await keyword before a promise makes JavaScript wait until that promise settles, and then:
+
+1.If it’s an error, the exception is generated, same as if throw error were called at that very place.
+2.Otherwise, it returns the result, so we can assign it to a value.
+
+
+
+eg:
+async function(){
+  let promise = new promise ((resolve,reject)=>{
+       setTime(()=>resolve("done"!),(1000)
+    });
+
+let result = await promise;
+alert(result);
+ }
+f()
+
+
+
+-async/await works well with Promise.all
+When we need to wait for multiple promises, we can wrap them in Promise.all and then await:
+
+// wait for the array of results
+let results = await Promise.all([
+  fetch(url1),
+  fetch(url2),
+  
+]);
+
+             
